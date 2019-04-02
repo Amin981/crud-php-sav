@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+        
+    
+<meta charset="utf-8">
+<title>Sign in </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- styles -->
+<link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" />
+<link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/slippry.css">
+<link href="assets/css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/color/default.css">
+<link  rel="stylesheet" href="css/qfc-dark.css">
+
+<script src="assets/js/modernizr.custom.js"></script>
+</head>
+<body>
+<header>
+
+<div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Oxygym++</a>
+    </div>
+
+
+
+  </div>
+</div>
+
+</header>
+<div class="qfc-container">
+		<h2>réclamation</h2>
+		<label>réclamez si votre commande ne vous plait pas  .</label>
+		<form method="POST" action="ajoutReclamation.php">
+                          
+			<div style=" height: 250px; padding-top: 70px; padding-left: 150px ;padding-right: 150px;">
+					<fieldset>
+	<table class="zebra-tab td-ajout" style="height: 400px;" align="center">
+
+	 
+	<tr>
+ 
+	<td><input type="text" name="Reference" id="reference"  onchange="validerCIN()" aria-required="true" aria-invalid="true" placeholder="reference de commande:" required pattern="[0-9]{8}" ></td>
+	</tr>
+	<tr>
+ 
+	<td><input type="text" name="Username" id="username" placeholder="username:" required>
+	</td> 
+	</tr>
+	<tr>
+	
+	<td><input type="text" name="Etat"  placeholder="Etat:"required></td>
+	</tr>
+	<tr>
+	
+	<td><input type="text" name="Adresse" placeholder="adresse" ></td>
+	</tr>
+	<tr>
+
+	<td><input type="text" name="Message" id="message"   placeholder="message"></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><input type="submit" name="ajouter" value="ajouter"></td>
+	</tr>
+	</fieldset>
+	</table>
+	</div>
+
+</form>
+</div>
+		
+</body>
+</html>

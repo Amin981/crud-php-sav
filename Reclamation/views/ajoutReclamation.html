@@ -1,0 +1,56 @@
+<HTML>
+<head>
+	<script src="test.js" ></script>
+	<script src="jquery.js"></script>
+	<script src="notify.js"></script>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" href="../../../css/center.css">
+	<link rel="stylesheet" href="../../../css/zebra.css">
+
+</head>
+<body>
+	<div style="background-color: #ffe6ff";>
+	<p>
+	
+</p>
+</div>
+<form method="POST" action="ajoutReclamation.php">
+	
+	<div style=" height: 250px; padding-top: 70px; padding-left: 750px ;padding-right: 750px;">
+		<fieldset>
+<table class="zebra-tab td-ajout" style="height: 400px;" align="center">
+ <h2 style="color: #DF365F; padding-bottom: 30px;" align="center">Veuillez remplir les champs</h2>
+ 
+<tr>
+<td>reference *</td>
+<td><input type="text" name="reference" id="Reference"  onchange="validerCIN()" aria-required="true" aria-invalid="true" placeholder="reference" required pattern="[0-9]{8}" ></td>
+</tr>
+<tr>
+<td>Username*</td>
+<td><input type="text" name="Username" id="Username" required>
+</td> 
+</tr>
+<tr>
+<td>Etat *</td>
+<td><input type="text" name="etat" maxlength="1" required pattern="[0-1]{1}"></td>
+</tr>
+<tr>
+<td>Adresse* </td>
+<td><input type="text" name="adresse"></td>
+</tr>
+<tr>
+<td>Message *</td>
+<td><input type="text" name="message" id="Message" onchange="validerDispo()" ></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" name="ajouter" value="ajouter"></td>
+</tr>
+</fieldset>
+</table>
+</div>
+
+</form>
+</body>
+</HTMl>
